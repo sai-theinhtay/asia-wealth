@@ -1,0 +1,6 @@
+MySQL fixes needed:
+1. Replace all .returning() with insert then select
+2. Fix upsertMemberLevel to use MySQL syntax
+3. For transactions, query by memberId + createdAt DESC limit 1
+4. For updates, update then select back
+
